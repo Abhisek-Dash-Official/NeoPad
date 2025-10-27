@@ -55,7 +55,7 @@ export default function Phone() {
           <HomeScreen changeScreen={(app) => setApp(app)} direction={direction} />
         );
         setBooted(true);
-      }, 20000);
+      }, 2000);
     }, 2000);
   }, []);
 
