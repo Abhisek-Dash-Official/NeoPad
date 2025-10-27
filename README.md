@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# NeoPad (1st Year REPO)
 
-First, run the development server:
+![Logo](public/logo.png)
 
-```bash
+<p><strong>A nostalgic keypad mobile experience, right in your browser.</strong></p>
+<p><em>A first-year project exploring complex UI logic with Next.js and Tailwind.</em></p>
+
+</div>
+
+> NeoPad is a single-page web application that faithfully recreates the experience of using a classic keypad mobile phone. It was built as a front-end challenge to implement complex, stateful logic in a clean UI.
+
+> It's built with Next.js and Tailwind CSS and runs entirely in your browser—no backend required.
+
+<div align="center">
+
+## 🚀 Screenshots
+
+## Boot Screen (Loading)
+
+![boot-screen](boot-screen.png)
+<br/>
+![boot-screen2](boot-screen2.png)
+<br/>
+<br/>
+
+## Home Page
+
+![Home](Home.png)
+<br/>
+<br/>
+
+## Calculator
+
+![calculator](Calculator.png)
+<br/>
+<br/>
+
+## Phone
+
+![phoneApp](PhoneApp.png)
+<br/>
+<br/>
+
+## Notes
+
+![Notes](Notes.png)
+<br/>
+<br/>
+
+</div>
+
+## ✨ Key Features
+
+> Classic Keypad Interface: Navigate the UI using on-screen buttons or your keyboard's arrow keys. Multi-Press T9 Logic: The core feature! Press '2' once for 'A', twice for 'B', three times for 'C', and four times for '2'.
+
+Built-in Apps: Includes simple, working applications:
+
+### 📞 Phone: A dialer that uses the multi-press logic.
+
+### 📝 Notes: A simple note-taking app.
+
+### 🧮 Calculator: A basic calculator.
+
+- Nostalgic UI: Styled with Tailwind CSS to capture the feel of early 2000s mobile phones, complete with a boot screen.
+
+- Fully Client-Side: Runs entirely in your browser. All logic is handled with React Hooks.
+
+- 💡 Core Concept: The Multi-Press Key Logic
+
+> The main technical challenge of this project was to replicate the T9-style multi-press text input from classic phones. This logic is handled entirely on the client-side using React's useState and useEffect hooks.
+
+### A custom hook manages:
+
+- Tracking the last key pressed.
+- A timer (setTimeout) to check if the user is pressing the same key again within a short window (e.g., 800ms).
+
+## 🛠️ Tech Stack
+
+- Framework: Next.js (React)
+- Styling: Tailwind CSS
+- State Management: React Hooks (useState, useEffect)
+- Icons: Lucide React
+
+Install dependencies:
+
+npm install
+npm i lucide-react
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 in your browser to see the app.
